@@ -25,6 +25,13 @@ salt '*' --return logentries cmd.run uptime
 
 The output from the cmd.run module will be sent to Logentries.
 
+If you want to the system to default to always use the logentries
+returner, add this to your master config
+
+```
+return: logentries
+```
+
 ## Notes
 
 This returner is very naive in how it sends data to logentries, further
